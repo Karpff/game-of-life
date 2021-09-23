@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script src="script.js"></script>
+        <meta charset="UTF-8">
+        <title>Game of Life</title>
+        <style>
+            html, body
+            {
+                text-align: center;
+            }
+            canvas
+            {
+                margin: auto;
+                border: 1px solid black;
+            }
+
+            button, input, canvas
+            {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas></canvas><br>
+        <button id="randomize-btn" title="Losowo">🎲</button>
+        <button id="start-btn" title="Start">▶&#xFE0F;</button>
+        <button id="stop-btn" title="Stop">⏸</button>
+        <button id="clear-btn" title="Wyczyść">⬜</button>
+        <button id="rule-btn" title="Własne reguły">📑</button>
+        <button id="resize-btn" title="Zmień rozmiar">🔳&#xFE0F;</button><br>
+        FPS: <input id="fps-slider" type="range" min="1" max="60" step="1" value="15">
+        [<span id="set-fps">15</span>]<br>
+        FPS: <span id="real-fps"></span>
+    </body>
+</html>
